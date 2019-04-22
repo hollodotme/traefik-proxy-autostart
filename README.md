@@ -2,6 +2,8 @@
 
 This repository contains all configs needed to auto-start a global traefik instance as a reverse-proxy in a docker-compose setup.
 
+The use case is described in my blog post: https://hollo.me/devops/routing-to-multiple-docker-compose-development-setups-with-traefik.html
+
 Currently the configs a tested on Mac OSX (Mojave) only.
 
 ## Installation

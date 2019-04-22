@@ -9,8 +9,11 @@ defaultEntryPoints = ["http", "https"]
     address = ":443"
     [entryPoints.https.tls]
       [[entryPoints.https.tls.certificates]]
-      certFile = "/etc/traefik/ssl/_wildcard.the-domain.com.pem"
-      keyFile = "/etc/traefik/ssl/_wildcard.the-domain.com-key.pem"
+      certFile = "/etc/traefik/ssl/_wildcard.project1.com.pem"
+      keyFile = "/etc/traefik/ssl/_wildcard.project1.com-key.pem"
+      [[entryPoints.https.tls.certificates]]
+      certFile = "/etc/traefik/ssl/_wildcard.project2.com.pem"
+      keyFile = "/etc/traefik/ssl/_wildcard.project2.com-key.pem"
 
 [api]
 
