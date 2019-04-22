@@ -1,0 +1,17 @@
+defaultEntryPoints = ["http", "https"]
+
+[entryPoints]
+    [entryPoints.http]
+    address = ":80"
+        [entryPoints.http.redirect]
+        entryPoint = "https"
+    [entryPoints.https]
+    address = ":443"
+    [entryPoints.https.tls]
+      [[entryPoints.https.tls.certificates]]
+      certFile = "/etc/traefik/ssl/_wildcard.the-domain.com.pem"
+      keyFile = "/etc/traefik/ssl/_wildcard.the-domain.com-key.pem"
+
+[api]
+
+[docker]

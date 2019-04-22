@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  traefik:
+    image: traefik
+    container_name: global_traefik
+    restart: "always"
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8080:8080"
+    volumes:
+      - ./traefik.toml:/etc/traefik/traefik.toml:ro
+      - ~/ssl:/etc/traefik/ssl:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    networks:
+      - default
+
+networks:
+  default:
+    external:
+      name: gateway
+
