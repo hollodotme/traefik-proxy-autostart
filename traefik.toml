@@ -9,12 +9,19 @@ defaultEntryPoints = ["http", "https"]
     address = ":443"
     [entryPoints.https.tls]
       [[entryPoints.https.tls.certificates]]
-      certFile = "/etc/traefik/ssl/_wildcard.project1.com.pem"
-      keyFile = "/etc/traefik/ssl/_wildcard.project1.com-key.pem"
+      certFile = "/etc/traefik/ssl/_wildcard.onfos.de.pem"
+      keyFile = "/etc/traefik/ssl/_wildcard.onfos.de-key.pem"
       [[entryPoints.https.tls.certificates]]
-      certFile = "/etc/traefik/ssl/_wildcard.project2.com.pem"
-      keyFile = "/etc/traefik/ssl/_wildcard.project2.com-key.pem"
+      certFile = "/etc/traefik/ssl/_wildcard.hollo.me.pem"
+      keyFile = "/etc/traefik/ssl/_wildcard.hollo.me-key.pem"
+      [[entryPoints.https.tls.certificates]]
+      certFile = "/etc/traefik/ssl/_wildcard.dresden-code-of-conduct.org.pem"
+      keyFile = "/etc/traefik/ssl/_wildcard.dresden-code-of-conduct.org-key.pem"
 
 [api]
+entryPoint = "traefik"
+dashboard = true
+address = ":8080"
 
 [docker]
+network = "gateway"
