@@ -1,0 +1,11 @@
+[[tls.certificates]]
+  certFile = "/etc/traefik/ssl/_wildcard.onfos.de.pem"
+  keyFile = "/etc/traefik/ssl/_wildcard.onfos.de-key.pem"
+
+[[tls.certificates]]
+  certFile = "/etc/traefik/ssl/_wildcard.hollo.me.pem"
+  keyFile = "/etc/traefik/ssl/_wildcard.hollo.me-key.pem"
+
+[[tls.certificates]]
+  certFile = "/etc/traefik/ssl/_wildcard.dresden-code-of-conduct.org.pem"
+  keyFile = "/etc/traefik/ssl/_wildcard.dresden-code-of-conduct.org-key.pem"
