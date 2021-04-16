@@ -9,3 +9,7 @@
 [[tls.certificates]]
   certFile = "/etc/traefik/ssl/_wildcard.dresden-code-of-conduct.org.pem"
   keyFile = "/etc/traefik/ssl/_wildcard.dresden-code-of-conduct.org-key.pem"
+
+[[tls.certificates]]
+  certFile = "/etc/traefik/ssl/_wildcard.from-home.de.pem"
+  keyFile = "/etc/traefik/ssl/_wildcard.from-home.de-key.pem"
