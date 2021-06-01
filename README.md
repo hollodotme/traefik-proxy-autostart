@@ -20,6 +20,7 @@ The use case is described in my blog post: https://hollo.me/devops/routing-to-mu
    mkcert "*.example.com"
    ```
    and change the config of certificates in the [certificates.toml](.docker/traefik/dynamic/certificates.toml), so that only your needed certificates are listed.
+4. Add `127.0.0.1 subdomain1.example.com subdomain2.example.com ...` to your `/etc/hosts` file, so that the trafiic is routed to the traefik instance.
 4. `cp ~/traefik/com.user.traefik.autostart.plist ~/Library/LaunchAgents/com.user.traefik.autostart.plist`
 5. Load the service with `launchctl load ~/Library/LaunchAgents/com.user.traefik.autostart.plist`
 6. Check the log file for errors: `tail -F ~/Library/Logs/traefik.autostart.log`
