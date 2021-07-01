@@ -22,3 +22,6 @@
 
   [entryPoints.websecure]
     address = ":443"
+
+  [entryPoints.mssql]
+    address = ":1433"
