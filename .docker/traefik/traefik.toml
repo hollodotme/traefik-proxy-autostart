@@ -25,3 +25,6 @@
 
   [entryPoints.mssql]
     address = ":1433"
+
+  [entryPoints.postgres]
+    address = ":5432"
