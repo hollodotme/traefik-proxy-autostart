@@ -2,7 +2,7 @@ version: "3"
 
 services:
   traefik:
-    image: library/traefik:v2.8
+    image: library/traefik:v2.9
     container_name: 'global_traefik'
     restart: "always"
     ports:
