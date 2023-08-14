@@ -12,6 +12,7 @@ services:
       - "1433:1433"
       - "5432:5432"
     volumes:
+      - ./logs:/logs
       - ./.docker/traefik:/etc/traefik
       - ~/ssl:/etc/traefik/ssl
       - /var/run/docker.sock:/var/run/docker.sock:ro
