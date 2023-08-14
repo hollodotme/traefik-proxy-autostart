@@ -28,3 +28,6 @@
 
   [entryPoints.postgres]
     address = ":5432"
+
+  [entryPoints.mongodb]
+    address = ":27017"
