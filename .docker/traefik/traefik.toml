@@ -31,3 +31,16 @@
 
   [entryPoints.mongodb]
     address = ":27017"
+
+[log]
+  filePath = "/logs/traefik.log"
+  level = "ERROR"
+
+[accessLog]
+  filePath = "/logs/access.log"
+  bufferingSize = 100
+
+[accessLog.filters]
+  statusCodes = ["200", "300-302"]
+  retryAttempts = true
+  minDuration = "10ms"
