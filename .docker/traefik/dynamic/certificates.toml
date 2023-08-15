@@ -13,3 +13,7 @@
 [[tls.certificates]]
   certFile = "/etc/traefik/ssl/_wildcard.from-home.de.pem"
   keyFile = "/etc/traefik/ssl/_wildcard.from-home.de-key.pem"
+
+[[tls.certificates]]
+  certFile = "/etc/traefik/ssl/_wildcard.tricera.de.pem"
+  keyFile = "/etc/traefik/ssl/_wildcard.tricera.de-key.pem"
