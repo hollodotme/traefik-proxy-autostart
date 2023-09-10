@@ -17,3 +17,11 @@
 [[tls.certificates]]
   certFile = "/etc/traefik/ssl/_wildcard.tricera.de.pem"
   keyFile = "/etc/traefik/ssl/_wildcard.tricera.de-key.pem"
+
+[[tls.certificates]]
+  certFile = "/etc/traefik/ssl/_wildcard.intravis.io.pem"
+  keyFile = "/etc/traefik/ssl/_wildcard.intravis.io-key.pem"
+
+[[tls.certificates]]
+  certFile = "/etc/traefik/ssl/_wildcard.mpowr.local.pem"
+  keyFile = "/etc/traefik/ssl/_wildcard.mpowr.local-key.pem"
