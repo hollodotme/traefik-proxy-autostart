@@ -23,5 +23,5 @@
   keyFile = "/etc/traefik/ssl/_wildcard.intravis.io-key.pem"
 
 [[tls.certificates]]
-  certFile = "/etc/traefik/ssl/_wildcard.mpowr.local.pem"
-  keyFile = "/etc/traefik/ssl/_wildcard.mpowr.local-key.pem"
+  certFile = "/etc/traefik/ssl/_wildcard.mpowr.ital.pem"
+  keyFile = "/etc/traefik/ssl/_wildcard.mpowr.ital-key.pem"
