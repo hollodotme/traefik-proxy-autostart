@@ -25,3 +25,11 @@
 [[tls.certificates]]
   certFile = "/etc/traefik/ssl/_wildcard.mpowr.ital.pem"
   keyFile = "/etc/traefik/ssl/_wildcard.mpowr.ital-key.pem"
+
+[[tls.certificates]]
+  certFile = "/etc/traefik/ssl/_wildcard.tricera.de.pem"
+  keyFile = "/etc/traefik/ssl/_wildcard.tricera.de-key.pem"
+
+[[tls.certificates]]
+  certFile = "/etc/traefik/ssl/_wildcard.book-play.de.pem"
+  keyFile = "/etc/traefik/ssl/_wildcard.book-play.de-key.pem"
