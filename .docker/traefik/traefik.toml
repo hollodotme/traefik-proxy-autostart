@@ -1,3 +1,7 @@
+[experimental.plugins.blockuseragent]
+  modulename = "github.com/agence-gaya/traefik-plugin-blockuseragent"
+  version = "v0.1.8"
+
 [providers]
   [providers.docker]
     exposedByDefault = false
